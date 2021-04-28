@@ -2,6 +2,7 @@
 
 ## General info:
 Script that prints data fields of a xml file for a given format.  
+Currently supported formats: aaa, nas.  
 Created in Python 3.7.9.
 
 ## Setup:
