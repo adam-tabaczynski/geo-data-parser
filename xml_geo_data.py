@@ -61,8 +61,8 @@ def get_display_data(parsed_xml_file: minidom.Document, file_format: str) -> Lis
 
 def display_data(list_of_parsed_plots_data: List[List[str]]) -> str:
   for plot_data in list_of_parsed_plots_data:
-    for index, field in enumerate(plot_data):
-      print(f"{polish_translation_tag_names[index].ljust(20)} {field}")
+    for field_name, field_value in zip(polish_translation_tag_names, plot_data):
+      print(f"{field_name.ljust(20)} {field_value}")
     print('---')
     
 
